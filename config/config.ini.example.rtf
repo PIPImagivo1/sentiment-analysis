@@ -1,0 +1,41 @@
+{\rtf1\ansi\ansicpg936\cocoartf2820
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 [database]\
+; SQLite\uc0\u37197 \u32622 \
+path = ./data/nuaa_news.db\
+; \uc0\u22791 \u20221 \u35774 \u32622 \
+backup_dir = ./backups\
+retention_days = 7\
+\
+[network]\
+; \uc0\u35831 \u27714 \u35774 \u32622 \
+user_agent = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36\
+request_timeout = 15\
+max_retries = 3\
+\
+[analysis]\
+; \uc0\u24773 \u24863 \u20998 \u26512 \u38408 \u20540 \
+positive_threshold = 0.65\
+negative_threshold = 0.35\
+; \uc0\u39046 \u22495 \u20851 \u38190 \u35789 \u25991 \u20214 \u36335 \u24452 \
+domain_keywords = ./config/nlp_keywords.txt\
+\
+[email]\
+; SMTP\uc0\u37197 \u32622 \
+smtp_server = smtp.exmail.qq.com\
+smtp_port = 465\
+username = your_email@example.com\
+password = your_app_password  ; \uc0\u20351 \u29992 \u19987 \u29992 \u24212 \u29992 \u23494 \u30721 \
+recipients = admin@nuaa.edu.cn, monitor@nuaa.edu.cn\
+\
+[logging]\
+; \uc0\u26085 \u24535 \u37197 \u32622 \
+level = INFO\
+file_path = ./logs/system.log\
+max_size = 10MB  ; \uc0\u21333 \u20301 \u25903 \u25345  MB/GB\
+backup_count = 5}

@@ -1,0 +1,18 @@
+# 基础依赖
+requests==2.31.0
+beautifulsoup4==4.12.3
+pandas==2.1.4
+sqlalchemy==2.0.23
+
+# 分析相关
+snownlp==0.12.3
+jieba==0.42.1
+matplotlib==3.8.2
+
+# 报告生成
+reportlab==4.0.4
+wordcloud==1.9.3
+
+# 其他工具
+python-dotenv==1.0.0
+tqdm==4.66.1
